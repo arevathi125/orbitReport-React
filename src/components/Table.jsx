@@ -2,7 +2,6 @@ import './styling.css'
 
 const Table = ({ sat }) => {
   return (
-    
     <table>
     <thead>
      <tr>
@@ -14,7 +13,7 @@ const Table = ({ sat }) => {
         </thead>
       <tbody>
      {sat.map((data, id) => {
-          return (<tr key={id}>
+        return (<tr key={id}>
             <td>{data.name}</td>
             <td>{data.type}</td>
             <td>{data.launchDate}</td>
@@ -24,9 +23,8 @@ const Table = ({ sat }) => {
         })} 
      </tbody>
     </table>
-  
   );
-  
+ 
 };
 
 export default Table;
